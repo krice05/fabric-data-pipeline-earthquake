@@ -28,4 +28,4 @@ This project demonstrates an **end-to-end data pipeline** using **Microsoft Fabr
 1. **Sign up for Microsoft Fabric trial** [here](https://app.fabric.microsoft.com/home?experience=fabric-developer).  
 2. **Clone this repository**:  
    ```sh
-   git clone https://github.com/yourusername/fabric-data-pipeline-example.git
+   git clone https://github.com/krice05/fabric-data-pipeline-earthquake.git
