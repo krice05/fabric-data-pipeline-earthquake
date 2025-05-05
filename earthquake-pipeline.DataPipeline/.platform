@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "earthquake-pipeline"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "75b19a13-55a1-acd5-4901-2852c09a2948"
+  }
+}

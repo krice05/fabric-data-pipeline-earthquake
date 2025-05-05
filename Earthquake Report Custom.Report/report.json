@@ -1,0 +1,60 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.64\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"creationSource\":\"QuickCreate\"}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "e452b0646853e8e9e521",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"49a183e0a0345e040720\",\"layouts\":[{\"id\":0,\"position\":{\"x\":13.989071038251367,\"y\":200.8430913348946,\"z\":0,\"width\":572.5526932084309,\"height\":458.6416861826698,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"earthquake_events_gold.country_code\",\"active\":true}],\"Size\":[{\"queryRef\":\"Sum(earthquake_events_gold.sig)\"}],\"Series\":[{\"queryRef\":\"earthquake_events_gold.sig_class\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"earthquake_events_gold\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"country_code\"},\"Name\":\"earthquake_events_gold.country_code\",\"NativeReferenceName\":\"Country\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"sig\"}},\"Function\":0},\"Name\":\"Sum(earthquake_events_gold.sig)\",\"NativeReferenceName\":\"Sum of sig\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"sig_class\"},\"Name\":\"earthquake_events_gold.sig_class\",\"NativeReferenceName\":\"Class\"}]},\"columnProperties\":{\"earthquake_events_gold.country_code\":{\"displayName\":\"Country\"},\"earthquake_events_gold.sig_class\":{\"displayName\":\"Class\"}},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 458.64,
+          "width": 572.55,
+          "x": 13.99,
+          "y": 200.84,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"904ade5289d86072036c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":596.5339578454333,\"y\":8.99297423887588,\"z\":2,\"width\":346.72911787665885,\"height\":89.92974238875878,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"earthquake_events_gold.id\"},{\"queryRef\":\"Sum(earthquake_events_gold.sig)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"earthquake_events_gold\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"id\"}},\"Function\":2},\"Name\":\"earthquake_events_gold.id\",\"NativeReferenceName\":\"Count of id1\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"sig\"}},\"Function\":0},\"Name\":\"Sum(earthquake_events_gold.sig)\",\"NativeReferenceName\":\"Significance (MAX)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"id\"}},\"Function\":2}}}]},\"columnProperties\":{\"earthquake_events_gold.id\":{\"displayName\":\"Total\"},\"Sum(earthquake_events_gold.sig)\":{\"displayName\":\"Significance (MAX)\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 89.93,
+          "width": 346.73,
+          "x": 596.53,
+          "y": 8.99,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"9b4e4724eb0ceb877002\",\"layouts\":[{\"id\":0,\"position\":{\"x\":13.989071038251367,\"y\":8.99297423887588,\"z\":1,\"width\":572.5526932084309,\"height\":178.86026541764247,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"earthquake_events_gold.time\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"earthquake_events_gold\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"time\"},\"Name\":\"earthquake_events_gold.time\",\"NativeReferenceName\":\"Date Range\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"time\"}}}]},\"columnProperties\":{\"earthquake_events_gold.time\":{\"displayName\":\"Date Range\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2025-05-02T23:43:19.520'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"earthquake_events_gold\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"time\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2025-05-03T00:00:00'\"}}}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 178.86,
+          "width": 572.55,
+          "x": 13.99,
+          "y": 8.99,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
